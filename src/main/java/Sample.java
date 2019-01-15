@@ -8,7 +8,7 @@ public class Sample extends RouteBuilder {
         from("timer:tick")
                 .process(new Processor() {
                     public void process(Exchange exchange) throws Exception {
-                        System.out.println("Hello World !");
+                        System.out.println("Hello Math !");
                     }
                 })
                 .setBody(constant("- Hello Kamel"))
