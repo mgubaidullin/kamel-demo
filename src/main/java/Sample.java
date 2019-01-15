@@ -12,7 +12,7 @@ public class Sample extends RouteBuilder {
                     }
                 })
                 .log("${headers}")
-                .setBody(constant("- HELLO KAMEL"))
+                .setBody(constant("- Hello Kamel"))
                 .to("log:info?skipBodyLineSeparator=false");
     }
 }
